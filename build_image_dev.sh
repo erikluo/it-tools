@@ -1,0 +1,1 @@
+docker build -f Dockerfile.dev --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t erikluo/vxiaozhi-dev:v0 .
