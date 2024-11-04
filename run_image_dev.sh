@@ -7,4 +7,4 @@ sudo sysctl -p
 # docker run -it --rm  --user $RUN_UID:$RUN_GID  -v $PWD:/home/lighthouse/app -w /home/lighthouse/app --entrypoint=sh  erikluo/vxiaozhi-dev:v0 
 
 
-docker run -it --rm  -v $PWD:/home/lighthouse/app -w /home/lighthouse/app --entrypoint=bash -p 8173:5173 erikluo/vxiaozhi-dev:v0
+docker run -it --rm  -v $PWD:/home/lighthouse/app -w /home/lighthouse/app --entrypoint=bash --network=host -p 5173:5173 erikluo/vxiaozhi-dev:v0
